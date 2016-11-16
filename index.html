@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>Mate Discreta| 2016</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1">      
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.materialdesignicons.com/1.1.34/css/materialdesignicons.min.css" type="text/css">
+      <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" media="screen,projection"/>
+             <style type="text/css">
+          input {
+              font-size: h2 !important;
+              text-align: center !important;
+          }
+        
+                 placeholder{
+                     font-size: h2 !important;
+
+                 }          
+          
+          
+          
+          
+      </style>
+   </head>
+   <body>
+<nav>
+    <div class="nav-wrapper teal lighten-2">
+      <a href="#!" class="brand-logo">Mate Discreta</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+          <li class="bold"><a class="waves-effect waves-light btn" href="#acercade">Acerca de mi</a></li>
+      </ul>
+      <ul class="side-nav teal lighten-2" id="mobile-demo">
+          <li class="bold"><a class="waves-effect waves-light btn" href="#acercade">Acerca de mi</a></li>
+      </ul>
+    </div>
+  </nav>
+<div class="row col s12 m12 row flow-text center">
+    <h2>Combinaciones y permutaciones</h2>
+                <form id="combypermu">
+
+        <div class="container col s12 m12 row flow-text ">
+            <table>
+                <tr>
+                    <td id="inputN"><input  type="text" name="n" placeholder="n"></td>
+                    <td id="inputR"><input type="text" name="k" placeholder="r"></td> 
+                </tr>
+            </table>
+
+    <div class="input-field container col s12 m12 row flow-text " >
+            
+            <select name="opciones" id="opcionOperaciones">
+            <option value="" disabled selected>Selecciona una operacion.</option>
+            <optgroup label="Permutaciones">
+            <option value="factorial">Permutacion de n </option>
+            <option value="permuSinRep">Sin repeticion</option>
+            <option value="permuConRep">Con repeticion</option>
+            <optgroup label="Combinaciones">
+            <option value="combiConRep">Combi repeticion</option>
+            <option value="combiSinRep">Combi sin repeticion</option>
+        </select>
+    </div>
+                    
+                    <div class="input-field container col s12 m12 row flow-text">
+            <div class="col s6 m6 center">
+                <button class="btn waves-effect waves-light mdi mdi-eraser"  align="center" type="reset" name="Name B1" value="Restablecer"></button>
+            </div>
+            <div class="col s6 m6 center">
+                <button class="btn waves-effect waves-light mdi mdi-equal" align="center" type="submit" name="Name B2" value="Calcular"></button>
+            </div>
+        </div>
+        
+
+    </form>
+       
+  <div class="fixed-action-btn horizontal">
+    <a class="btn-floating btn-large teal">
+      <i class="large material-icons">add</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating teal darken-3" href="https://github.com/zaqueo/Matematica-Discreta"><i class="material-icons">code </i></a></li>
+    </ul>
+  </div>
+        
+       </div>
+       
+         <div id="acercade" class="modal">
+    <div class="modal-content">
+
+        
+        
+        
+        
+        <div id="team" class="section scrollspy">
+        <div class="row">
+          <h2 class="header">Conozca al equipo</h2>
+          <p class="caption">Somos un grupo de la universidad Mariano Galvez de Guatemala.</p>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col s12 m3 center-on-small-only">
+            <div class="image-container">
+              <img src="http://algebralineal.io.gt/fotos/1.jpg" class="circle responsive-img">
+            </div>
+          </div>
+          <div class="col s12 m9">
+            <h4>Zaqueo Gomez Gomez</h4>
+            <p>Carnet:  0904-14-4224</p>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+          <div class="col s12 m3 center-on-small-only">
+            <div class="circle image-container">
+              <img src="http://algebralineal.io.gt/fotos/2.jpg" class="circle responsive-img">
+                
+            </div>
+          </div>
+          <div class="col s12 m9">
+            <h4>Christian Manolo Recinos Perez</h4>
+            <p>Carnet:   0909-14-21803</p>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+          <div class="col s12 m3 center-on-small-only">
+            <div class="circle image-container">
+                <img src="http://algebralineal.io.gt/fotos/3.jpg" class="circle responsive-img">
+
+            </div>
+          </div>
+          <div class="col s12 m9">
+            <h4>Bagner Merida Merida</h4>
+            <p>Carnet:  0904-13-7777</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>
+         <div id="resultado" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Resultado de la operacion</h4>
+      
+        
+        
+        
+        <div class="row">
+          <div id="resultadoDiv"></div>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+    </div>
+  </div>
+       
+             <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>     
+        <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+       
+       <script type="text/javascript">
+           $(".button-collapse").sideNav();
+       </script>
+       
+       <script type="text/javascript">
+$(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });       </script>
+       
+       <script type="text/javascript">
+           $(document).ready(function() {
+               $('select').material_select();
+           });       
+       </script>
+       <script type="text/javascript">
+           
+           
+           $('#combypermu').submit(function () {
+        $.post("combypermu.php", $("#combypermu").serialize(), function(data) {
+  
+            $( '#resultadoDiv').html(data);
+              $('#resultado').modal('open');
+    });
+    return false; 
+}); 
+           
+           
+           
+           
+       $('#opcionOperaciones').on('change', function() {
+        var sel0 = this.value;
+        if(sel0=='factorial'){
+            $("#inputR").hide();
+        }
+        else
+            {
+                $("#inputR").show();
+            }
+});
+
+       </script>
+    </body>  
+</html>
+
+
+
+
+
+
+
+
+
+
+
